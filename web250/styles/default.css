@@ -1,0 +1,116 @@
+  *{
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #000000;
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+  
+  section {
+    background: #ccc;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 20%;
+    height: auto;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  nav li a {
+    display: block;
+    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #000000;
+    color: white;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    height: auto;
+    background-color: #f1f1f1;
+  }
+
+  img {
+    float: right;
+    padding: 20px;
+    border-radius: 40px;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the footer */
+  footer {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .myButton {
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background-color:#ffffff;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+  }
+  .myButton:hover {
+    background-color:#f6f6f6;
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }
+  
+  
